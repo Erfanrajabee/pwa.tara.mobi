@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><script type="text/javascript">
+//<![CDATA[
+window["_csrf_"] = "08be65c7eb84b000f90f4192a4f0ea0a59c45c4a8f4fcb57f4f7171bf1dbc524152181942667ae456c542dc6379a3855688e8074d081bf54bdaee5d13204242df9e77db2631cc1f58909f2c7ba15e8b22f40c7cd921d17764fa87ec3dcbc9d32e26a459190261f3943c3c091a049f75097227728c007423b20144e748141bc76e649127e20895b06a1e9a21dfe9a3d978315161b504c19526c743f285c84c8ae7dc72820425e7d0e7899c81fb92aef0c3f11d05c292c2fdc";
+//]]>
+</script><script type="text/javascript" src="/TSbd/08b80b4e91ab2000f80b7b8855ac9b9c986dd4c420c52bbc4abc2492c4bbed48a1e116f8e53b5625?type=2"></script><script type="text/javascript">console.log("%c GTM","color: green"),function(e,t,a,n,o){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-554GKZ36",g.parentNode.insertBefore(r,g)}(window,document,"script","dataLayer")</script><meta charset="utf-8"/><meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no"/><meta name="HandheldFriendly" content="true"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><meta http-equiv="cache-control" content="no-cache"/><meta http-equiv="expires" content="0"/><meta http-equiv="pragma" content="no-cache"/><link rel="stylesheet" href="style.css"/><link rel="icon" href="/favicon.ico"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" href="./assetsPublic/icon-512.png"/><title>تارا</title><style>#tara-splash-screen{position:absolute;top:0;left:0;right:0;bottom:0;z-index:99999;background-color:#101c93}#tara-splash-screen .text-version{position:absolute;top:94%;left:0;right:0;opacity:.8;color:#fff;font-size:12px;text-align:center;font-family:iranSansNum}#tara-splash-screen img{width:120px;position:absolute;top:47%;left:0;right:0;margin:0 auto}@media (max-height:500px){#tara-splash-screen .text-version{top:90%}}@font-face{font-family:iranSansNum;src:url(assetsPublic/IRANSansWeb.ttf);font-style:normal;font-weight:400}</style><link href="/static/css/2.46700565.chunk.css" rel="stylesheet"><link href="/static/css/main.c9edc478.chunk.css" rel="stylesheet"></head><!-- #swipe step1 --><body style="touch-action:pan-y"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-554GKZ36" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript>You need to enable JavaScript to run this app.</noscript><div id="root" class="flex"><div id="tara-splash-screen" onclick="handleCacheBrowser(event)"><img id="splashImg" class="logo anim-splash--fade" width="128" src="./assetsPublic/splashLogo.png" alt=""/><p id="version" class="p-3 text-version"></p></div></div><script>document.getElementById("version").innerHTML = `نسخه ${localStorage.getItem("version")?.replace("-staging", "") || "1.3.x"
+      }`;
+
+    // Handle Clear Cache: Begin ---------------------------------------------------------------------------
+    // console.log(`%c index call`, "color: grey");
+    var isClickableBtn = false;
+    setTimeout(() => {
+      isClickableBtn = true;
+    }, 3000);
+    function handleCacheBrowser(e) {
+      console.log(
+        `%c Call handleCacheBrowser()`,
+        'color: grey'
+      );
+
+      if (isClickableBtn) {
+        // console.log(`%c handleCacheBrowser call`, "color: yellow");
+        isClickableBtn = false;
+        setTimeout(() => {
+          isClickableBtn = true;
+        }, 3000);
+        e.preventDefault();
+        if ("caches" in window) {
+          caches.keys().then((names) => {
+            console.log("the cache files: ", names);
+            // + Delete all the cache files
+            names.forEach((name) => {
+              caches.delete(name);
+            });
+          });
+        }
+        const currentUrlPathname = window?.location?.pathname;
+        const currentUrlOrigin = window?.location?.origin;
+        if (currentUrlOrigin && currentUrlPathname) {
+          if (currentUrlPathname !== '/home') {
+            sessionStorage.setItem('urlStartCache', currentUrlPathname);
+          }
+          window.location.replace(currentUrlOrigin);
+        } else {
+          window.location.reload(true);
+        }
+      }
+      return true;
+    }
+    // --------------------------------------------------------------------------- Handle Clear Cache: End
+
+    document.addEventListener("gesturestart", function (e) {
+      e.preventDefault();
+      // special hack to prevent zoom-to-tabs gesture in safari
+      document.body.style.zoom = 0.99;
+    });
+    document.addEventListener("gesturechange", function (e) {
+      e.preventDefault();
+      // special hack to prevent zoom-to-tabs gesture in safari
+      document.body.style.zoom = 0.99;
+    });
+    document.addEventListener("gestureend", function (e) {
+      e.preventDefault();
+      // special hack to prevent zoom-to-tabs gesture in safari
+      document.body.style.zoom = 0.99;
+    });
+    document.addEventListener(
+      "touchmove",
+      function (event) {
+        if (event.scale !== 1) {
+          event.preventDefault();
+        }
+      },
+      false
+    );</script><!-- #crisp Step0 #2766 : Start  --><!-- #Crisp_ON --><script type="text/javascript">window.$crisp=[],window.CRISP_WEBSITE_ID="87a11f4f-56e9-418d-8cda-b1d67ba2d5b8",d=document,s=d.createElement("script"),s.src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><!-- #2766 : End --><script>!function(e){function r(r){for(var n,l,a=r[0],f=r[1],i=r[2],p=0,s=[];p<a.length;p++)l=a[p],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(c&&c(r);s.length;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var f=t[a];0!==o[f]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var a=this.webpackJsonptaraclub=this.webpackJsonptaraclub||[],f=a.push.bind(a);a.push=r,a=a.slice();for(var i=0;i<a.length;i++)r(a[i]);var c=f;t()}([])</script><script src="/static/js/2.33994394.chunk.js"></script><script src="/static/js/main.d1fb4c58.chunk.js"></script></body></html>
